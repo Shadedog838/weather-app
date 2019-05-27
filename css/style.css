@@ -1,3 +1,109 @@
 h1 {
-  color: fuchsia;
+ color: white;
+ text-align:center;
 }
+
+.project{
+   color: black;
+   border: 1px solid white;
+   width: 80%;
+   height: 80%;
+   margin: 100px auto 0 auto;
+  };
+#Weather{
+   border: 1px solid white;
+   width: 100%;
+   height: 50%;
+}
+
+
+img{
+    height:150px;
+    width:150px;
+padding:20px;
+}
+
+#content{
+    display: flex;
+}
+#temp{
+    border: 1px solid white;
+    width:100%;
+    height:300px;
+    flex:1;
+    font-size: 100px;
+    text-align: center;
+    color:white;
+}
+#description{
+    border: 1px solid white;
+    width:100%;
+    height:10%;
+    font-size: 50px;
+    color:white;
+
+
+}
+#photo{
+   border: 1px solid white;
+    width:100%;
+    height:300px;
+   flex:2;
+
+}
+#clothing{
+   border: 1px solid white;
+   flex: 1;
+   color:white;
+   font-size:25px;
+font-weight: bold;
+}
+
+#Info{
+   border: 1px solid white;
+   flex: 1;
+   font-size:24px;
+   color:White;
+font-weight: bold;
+}
+
+#bottom{
+   display: flex;
+
+}
+
+
+body {
+     background-image: url("https://thumbs.gfycat.com/ConstantLinedGazelle-size_restricted.gif");
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Arial;
+  color:white;
+
+}
+input{
+    padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+button{
+     float: left;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+ button:hover {
+  background: #0b7dda;
+}
+
