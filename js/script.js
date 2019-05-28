@@ -94,12 +94,22 @@ function weather(){
 }
 
 $("button").click(function(){
-    weather();
-    console.log("done")
-    $("#description").empty();
-    $("#Info").empty();
+activate();
 
+});
+document.querySelector('body').addEventListener('keypress', function (e) {
+    console.log(e);
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+activate();
+    }
 });
 function convert(x){
     return(x*9)/5 +32
+}
+function activate(){
+     weather();
+    console.log("done")
+    $("#description").empty();
+    $("#Info").empty();
 }
