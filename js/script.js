@@ -1,6 +1,6 @@
 function weather(){
     var city=$('input').val();
- $('#photo').html('<iframe width="718" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=' + city + '&key=AIzaSyDCrbXRzJM0aDwVoWrIpONMHPimj_29EUM" allowfullscreen></iframe>');
+ $('#photo').html('<iframe width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=' + city + '&key=AIzaSyDCrbXRzJM0aDwVoWrIpONMHPimj_29EUM" allowfullscreen></iframe>');
 
     $.ajax({
         url: "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query="+ city,
@@ -27,7 +27,7 @@ function weather(){
      if(icon ==="Showers")
     {
        $("#temp").append("<img src='icons/s.svg'>");
-       $("body").css("background-image","url(https://media1.tenor.com/images/4720d56c05623dd138009580c627cf3e/tenor.gif?itemid=4979408)");
+       $("body").css("background-image","url(https://data.whicdn.com/images/302952306/original.gif)");
        $("#clothing").html("Bring an Umbrella, depending on the temperature you can dress however you would like. You should wear cotton based clothing though.")
 
     }else if(icon === "Snow")
@@ -52,29 +52,29 @@ function weather(){
     {
         $("#temp").append("<img src='icons/t.svg'>");
         $("body").css("background-image", "url(https://media.giphy.com/media/rvdUftzA8567u/giphy.gif)");
-        $("#clothing").html("Bring an Umbrella, you'll need it. Be careful, thunderstorms are a front for lightning. You should wear rainboots and a raincoat or windbreaker.")
+        $("#clothing").html("Bring an Umbrella, you'll need it. Be careful, thunderstorms and lightning go hand in hand, so if there's thunder there is definetly lightning. You should wear rainboots and a raincoat or windbreaker.")
 
     }else if(icon === "Light Rain")
     {
         $("#temp").append("<img src='icons/lr.svg'>");
-        $("body").css("background-image", "url(http://img.jetbitts.com/screensavers/down/new/places/streetligh_32Fx8W8e.gif)");
+        $("body").css("background-image", "url(https://bestgifs.makeagif.com/wp-content/uploads/2016/07/rain.gif)");
         $("#clothing").html("Bring an Umbrella, the weather can pick up or slow down. You should wear a poncho or windbreaker.")
     }else if(icon ==="Heavy Rain")
     {
        $("#temp").append("<img src='icons/hr.svg'>");
-       $("body").css("background-image", "url(https://i.imgur.com/XsSKp.gif)");
+       $("body").css("background-image", "url(https://66.media.tumblr.com/8b73da777e748b6f6a5e7c7243d9ac5d/tumblr_ozjqlc9UgB1up2hhro1_400.gif)");
        $("#clothing").html("Bring an Umbrella, Put on some rain boots and a raincoat, you'll need it.")
 
     }else if(icon === "Heavy Cloud")
     {
         $("#temp").append("<img src='icons/hc.svg'>");
         $("body").css("background-image","url(https://media3.giphy.com/media/Cn46Wi1Fvh11S/giphy.gif)");
-        $("#clothing").html("Bring an umbrella just in case it rains, it's likely to occur. Wear a windbreaker becasue it's light and effective.")
+        $("#clothing").html("Bring an umbrella just in case it rains, it's likely to occur. Wear a windbreaker because it's light and effective.")
 
     }else if(icon === "Light Cloud")
     {
         $("#temp").append("<img src='icons/lc.svg'>");
-        $("body").css("background-image", "url(https://thumbs.gfycat.com/BrownIllegalChafer-max-1mb.gif)");
+        $("body").css("background-image", "url(https://media.giphy.com/media/SotJCbDWOnnWM/giphy.gif)");
         $("#clothing").html("Bring an umbrella in case it rains, depending on the temperature you can dress however you would like.")
 
     }else if(icon === "Clear")
