@@ -1,6 +1,6 @@
 function weather(){
     var city=$('input').val();
- $('#photo').html('<iframe width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=' + city + '&key=AIzaSyDCrbXRzJM0aDwVoWrIpONMHPimj_29EUM" allowfullscreen></iframe>');
+ $('#photo').html('<iframe width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=' + city + '&key=AIzaSyDO5KCZiEAO3sUF2eDx-l2q1PUPdvdKc5o" allowfullscreen></iframe>');
 
     $.ajax({
         url: "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query="+ city,
