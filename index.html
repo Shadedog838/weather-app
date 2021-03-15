@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <title>Client Project</title>
+   <title>Weather App</title>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,39 +9,28 @@
    <link rel="stylesheet" href="css/style.css">
  </head>
  <body>
-     <h1> Weather Head <img id="weatherhead" src="https://store1.wxdisco.com/storage/uploads/monthly_2019_01/ezgif.com-crop.gif.404fe32c82e2be0ee33b0cc6fd090924.gif.0fd593656e6be89a5b91f0dd923d7fb9.gif"></h1>
-
-     <div class="project">
-
-   <div id="Weather">
-     <input Placeholder="Please Enter Your City" onfocus="this.value=''">
-     <button>Enter</button>
-     <br>
-     <br>
-       <h1>City Name</h1>
-       <div id="content">
-           <div id="temp"></div>
-           <div id="photo"> </div>
-           </div>
-           <div id = "description"> </div>
-
-
-   </div>
-    <div id="bottom">
-       <div id="clothing">See the Clothing You Should Wear Below</div>
-       <div id="Info">
-           <ul>
-
-           </ul>
-       </div>
-   </div>
-   </div>
-
-   <!-- jQuery Linked Below-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-   <!-- Your Javascript Linked Below-->
-   <script src="js/script.js" defer></script>
+  <section class="top-banner">
+    <div class="container">
+      <h1 class="heading">Weather App <img src="icons/weatherhead.gif"></h1>
+      <form>
+        <input type="text" placeholder="Search for a city" autofocus>
+        <button type="submit">SUBMIT</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <small>Made by <a href="http://georgemartsoukos.com/" target="_blank">Shandon Mith</a>
+      </small>
+    </div>
+  </footer>
+     <script src="js/script.js"></script>
  </body>
 
 </html>
