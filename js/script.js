@@ -5,8 +5,8 @@ const list = document.querySelector(".ajax-section .cities");
 const apiKey = "b743fbad173156706970d9bd2a32641f";
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  var d = new Date();
-	var n = d.getHours();
+  let d = new Date();
+	let n = d.getHours();
 	if (n >= 19 || n < 6)
 	  // If time is after 7PM or before 6AM, apply night theme to ‘body’
 	  document.body.className = "night";
