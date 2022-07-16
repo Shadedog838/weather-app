@@ -73,7 +73,7 @@ form.addEventListener("submit", e => {
       li.classList.add("city");
       const markup = `
         <h2 class="city-name" data-name="${name},${sys.country}">
-          <span>${name}</span>
+          <span onclick="${getMap(name)}">${name}</span>
           <sup>${sys.country}</sup>
         </h2>
         <div class="city-temp">${Math.round((main.temp * 9/5) + 32)}<sup>°F</sup></div>
@@ -96,3 +96,11 @@ form.addEventListener("submit", e => {
   input.focus();
 });
 
+function getMap(city) {
+  let iframe = document.createElement('iframe');
+  iframe.width="100%"
+  iframe.height="300"
+  iframe.style="border:0"
+  iframe.src="https://www.google.com/maps/embed/v1/place?q=" + city + "&key=AIzaSyAMXA2LHyble57Zmr2wNpo8hX3gmaB8F74"
+  document.getElementById("map").appendChild(iframe);
+}
