@@ -257,21 +257,21 @@ img {
 }
 
 .day {
-  background: url('/img/day-image.avif');
+  background: url('./img/day-image.avif');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .sunset {
-  background: url('/img/afternoon-image.avif');
+  background: url('./img/afternoon-image.avif');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
  }
 .night {
-  background: url('/img/night-image.avif');
+  background: url('./img/night-image.avif');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
